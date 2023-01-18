@@ -1,0 +1,15 @@
+<div class="main">
+    <h4><b>Name :</b> {{studentIn.firstName}} {{studentIn.lastName}}</h4>
+    <p><b>Age :</b> {{studentIn.age}} &nbsp;&nbsp;   <b>Gender : </b> {{studentIn.gender}}</p>
+    <p><b>Nationality:</b> {{studentIn.nationality}}</p>
+    <p *ngIf="studentIn.occup"> <b>Occupation: </b> {{studentIn.occup}}</p>
+    <p><b>Marital Status:</b> {{studentIn.status}}</p>
+    <p><b>Home Addrress:</b> {{studentIn.homeAddress}}</p>
+
+    <div class="educ">
+        <h4>Educational Background</h4>
+        <p><b>Elementary School: </b>{{studentIn.elemSchool}}</p>
+        <p><b>High School: </b>{{studentIn.highSchool}}</p>
+        <p *ngIf="studentIn.college"><b>College: </b>{{studentIn.college}}</p>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.main{
+    border: solid brown 2px;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: palegoldenrod;
+}
+
+.main p{
+    margin-left: 3%;
+}
