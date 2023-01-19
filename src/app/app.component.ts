@@ -14,21 +14,21 @@ export class AppComponent {
   taskList: Task[]= [
     {//if object put in curly braces
       id:0,
-      name : "Doning",
-      description : "Junnalyn",
-      assignTo : "Filipino"
+      name : "Drawing",
+      description : "Make a portrait of different people",
+      assignTo : "Balbuena"
     },
     {//if object put in curly braces
       id:1,
-      name : "Ryuk",
-      description : "Shinigami",
-      assignTo : "25"
+      name : "Note Taking",
+      description : "Jot down notes from the discussion",
+      assignTo : "Tinapay"
     },
     {//if object put in curly braces
       id:2,
-      name : "Bernadez",
-      description : "Jo-ann",
-      assignTo : "Animator"
+      name : "Sleeping",
+      description : "To gain more energy",
+      assignTo : "Bernadez"
     }
   ]
 
