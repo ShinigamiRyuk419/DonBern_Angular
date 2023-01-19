@@ -1,17 +1,15 @@
 <h1>{{title}}</h1>
 
+<h2>Everyone Task List</h2>
 
-<div >
-  <!-- <app-student [studentIn]="student"></app-student> -->
-  <div *ngIf="!isAddStudent">
-    <h2>Students List</h2>
-    <button (click)="addNewStudent()">Add New Student</button>
-    <div *ngFor="let student of studentsList">
-      <app-student [studentIn]="student"></app-student>
-    </div>
+<div *ngIf="!isAddTask">
+  <h2>Students List</h2>
+  <button (click)="addNewTask()">Add New Task</button>
+  <div *ngFor="let task of taskList">
+    <app-tasks [taskIn]="task"></app-tasks>
   </div>
+</div>
 
-  <div *ngIf="isAddStudent">
-    <app-add-student (studentOut)="addStudent($event)"></app-add-student>
-  </div>
-
+<div *ngIf="isAddTask">
+  <app-addtask (taskOut)="addTask($event)"></app-addtask>
+</div>
